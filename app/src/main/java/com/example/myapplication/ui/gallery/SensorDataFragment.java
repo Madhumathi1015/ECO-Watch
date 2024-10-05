@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -19,6 +20,7 @@ public class SensorDataFragment extends Fragment {
 
     private TextView textMQ2, textMQ4, textMQ7, textMQ135;
     private DatabaseReference databaseReference;
+    private ImageButton imageButton1, imageButton2, imageButton3, imageButton4;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -29,6 +31,29 @@ public class SensorDataFragment extends Fragment {
         textMQ4 = root.findViewById(R.id.text_mq4);
         textMQ7 = root.findViewById(R.id.text_mq7);
         textMQ135 = root.findViewById(R.id.text_mq135);
+
+        // Find ImageButtons by their IDs
+        imageButton1 = root.findViewById(R.id.imageButton1);
+        imageButton2 = root.findViewById(R.id.imageButton2);
+        imageButton3 = root.findViewById(R.id.imageButton3);
+        imageButton4 = root.findViewById(R.id.imageButton4);
+
+        // Set click listeners for the ImageButtons
+        imageButton1.setOnClickListener(v -> {
+            // Action for Button 1
+        });
+
+        imageButton2.setOnClickListener(v -> {
+            // Action for Button 2
+        });
+
+        imageButton3.setOnClickListener(v -> {
+            // Action for Button 3
+        });
+
+        imageButton4.setOnClickListener(v -> {
+            // Action for Button 4
+        });
 
         // Get a reference to the Firebase Realtime Database
         databaseReference = FirebaseDatabase.getInstance().getReference("sensorData");

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageButton1" type="id">Button1</item>
+    <item name="imageButton2" type="id">Button2</item>
+    <item name="imageButton3" type="id">Button3</item>
+    <item name="imageButton4" type="id">Button4</item>
+</resources>
